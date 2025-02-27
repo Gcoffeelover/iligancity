@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attractions - Iligan City Tourism</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome (for social media icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Add background image to the entire body */
+    body {
+      padding-top: 70px; /* Ensure content doesn't overlap with fixed navbar */
+      background-image: url('spring.jpg');
+      background-size: cover; /* Make the background cover the whole screen */
+      background-position: center; /* Center the background */
+      background-attachment: fixed; /* Keep the background fixed while scrolling */
+    }
+
+    /* Additional custom styling for the navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1030; /* Ensure it stays on top */
+      background-color: rgba(63, 57, 57, 0.726); /* Semi-transparent background */
+      padding: 3px 0; /* Reduced padding to bring navbar closer */
+    }
+
+    .navbar img {
+      height: 50px; /* Adjust logo size */
+      width: 50px;  /* Make the image square for circle effect */
+      border-radius: 50%; /* Make the image a circle */
+    }
+
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.5); /* White toggle button border */
+    }
+
+    .navbar-nav {
+      margin-left: 10px; /* Adjust the spacing of the navbar items */
+    }
+
+    /* Header Section Styling */
+    header {
+      padding: 50px 0; /* Increased padding for better spacing */
+    }
+
+    /* Text Styling */
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: white;
+    }
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    /* Attractions Section */
+    #attractions {
+      text-align: center;
+      color: white; /* Ensure text is visible on the background */
+    }
+
+    /* Style for image grid */
+    .attraction-images {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* 6 images in a row */
+      gap: 15px;
+    }
+
+    .attraction-images img {
+      object-fit: cover; /* Ensure images are cropped to the same size */
+      width: 100%;
+      height: 200px; /* Set uniform height */
+      border-radius: 20px;
+    }
+
+    /* Container Styling */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navbar -->
+  <header class="text-white text-center py-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Logo"> <!-- Add your logo image here -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="attractions.html">Attractions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="foodcltre.html">Food & Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+ <!-- Attractions Section -->
+<section id="attractions" class="py-6 text-center">
+    <div class="container">
+      <h1 class="mb-4">Top Attractions in Iligan City</h1>
+  <br>
+  <br>
+  <br>
+      <!-- Maria Cristina Falls -->
+      <div class="mb-5">
+        <h2>Maria Cristina Falls</h2>
+        <div class="attraction-images">
+          <img src="mc6.webp" alt="Maria Cristina Falls Image 1">
+          <img src="mc5.webp" alt="Maria Cristina Falls Image 2">
+          <img src="mc4.jpg" alt="Maria Cristina Falls Image 3">
+          <img src="mc3.jpg" alt="Maria Cristina Falls Image 4">
+          <img src="mc2.jpg" alt="Maria Cristina Falls Image 5">
+          <img src="mc1.jfif" alt="Maria Cristina Falls Image 6">
+          <br>
+        </div>
+        <p style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-weight: bold; font-style: italic;">
+          Maria Cristina Falls, also known as the "twin falls" due to a large rock that splits its flow, stands at an impressive 320 feet high. It's located on the Agus River, which flows from Lake Lanao to Iligan Bay. This majestic waterfall is not only a natural wonder but also a vital source of hydroelectric power for the region, managed by the Agus VI Hydroelectric Plant.
+      </p>
+      
+        <p><strong>Contact Information:</strong>  
+          <br>Phone: +63 927 383 8729  
+          <br>Website: <a href="https://www.npc.gov.ph">NPC Nature's Park</a>  
+          <br>Facebook: <a href="https://www.facebook.com/npcnaturepark">NPC Nature's Park Facebook</a></p>
+      </div>
+  
+      <!-- Tinago Falls -->
+      <div class="mb-5">
+        <h2>Tinago Falls</h2>
+        <div class="attraction-images">
+          <img src="tinago1.jpg" alt="Tinago Falls Image 1">
+          <img src="tina.jpg" alt="Tinago Falls Image 2">
+          <img src="tinago3.jpg" alt="Tinago Falls Image 3">
+          <img src="tinago4.JPG" alt="Tinago Falls Image 4">
+          <img src="tinago5.jpg" alt="Tinago Falls Image 5">
+          <img src="tinago6.jpg" alt="Tinago Falls Image 6">
+        </div>
+        <p><strong><em>Tinago Falls is a 240-foot high waterfall that cascades into a serene, turquoise pool. The name "Tinago," which means "hidden" in Filipino, reflects its secluded location. Visitors must descend approximately 500 steps to reach this enchanting spot, where they can swim, raft, and explore a small cave behind the falls.</em></strong></p>
+        <p><strong>Contact Information:</strong>  
+          <br>Phone: +63 917 157 2798  
+          <br>Facebook: <a href="https://www.facebook.com/TinagoFalls">Tinago Falls Official</a></p>
+      </div>
+  
+      <!-- Mimbalot Falls -->
+      <div class="mb-5">
+        <h2>Mimbalot Falls</h2>
+        <div class="attraction-images">
+          <img src="mimba1.webp" alt="Mimbalot Falls Image 1">
+          <img src="mimba2.jpg" alt="Mimbalot Falls Image 2">
+          <img src="mimba3.JPG" alt="Mimbalot Falls Image 3">
+          <img src="mimba4.jpg" alt="Mimbalot Falls Image 4">
+          <img src="mimba5.jpg" alt="Mimbalot Falls Image 5">
+          <img src="mimba6.jfif" alt="Mimbalot Falls Image 6">
+        </div>
+        <p><strong><em>Mimbalot Falls is a serene retreat with multi-tiered cascades and clear pools, perfect for relaxation and adventure. The resort offers picnic areas, cottages, and a restaurant for visitors.</em></strong></p>
+        <p><strong>Contact Information:</strong>  
+          <br>Phone: +63 926 213 1478  
+          <br>Website: <a href="https://www.iliganparadiseresort.com">Iligan Paradise Resort</a>  
+          <br>Facebook: <a href="https://www.facebook.com/IliganParadiseResort">Iligan Paradise Resort Facebook</a></p>
+      </div>
+  
+      <!-- Timoga Cold Springs -->
+      <div class="mb-5">
+        <h2>Timoga Cold Springs</h2>
+        <div class="attraction-images">
+          <img src="timoga1.jpg" alt="Timoga Cold Springs Image 1">
+          <img src="timoga2.jpg.crdownload" alt="Timoga Cold Springs Image 2">
+          <img src="timoga3.jpg" alt="Timoga Cold Springs Image 3">
+          <img src="timoga4.jpg" alt="Timoga Cold Springs Image 4">
+          <img src="timoga5.jpg" alt="Timoga Cold Springs Image 5">
+          <img src="timoga6.jpg" alt="Timoga Cold Springs Image 6">
+        </div>
+        <p><strong><em>Timoga Cold Springs is a popular spot for swimming and relaxation with its cool, refreshing waters that flow into several swimming pools, ideal for visitors of all ages.</em></strong></p>
+        <p><strong>Contact Information:</strong>  
+          <br>Phone: +63 917 123 4567  
+          <br>Facebook: <a href="https://www.facebook.com/TimogaSprings">Timoga Springs Official</a></p>
+      </div>
+  
+      <!-- Paseo de Santiago -->
+      <div class="mb-5">
+        <h2>Paseo de Santiago</h2>
+        <div class="attraction-images">
+          <img src="paseo1.webp" alt="Paseo de Santiago Image 1">
+          <img src="paseo2.jpg" alt="Paseo de Santiago Image 2">
+          <img src="paseo3.webp" alt="Paseo de Santiago Image 3">
+          <img src="paseo4.jpg" alt="Paseo de Santiago Image 4">
+          <img src="paseo5.webp" alt="Paseo de Santiago Image 5">
+          <img src="paseo6.JPG" alt="Paseo de Santiago Image 6">
+        </div>
+        <p><strong><em>Paseo de Santiago is a scenic park perfect for leisurely strolls, picnics, and enjoying local cultural landmarks.</em></strong></p>
+        <p><strong>Contact Information:</strong>  
+          <br>Phone: +63 917 879 5678  
+          <br>Facebook: <a href="https://www.facebook.com/PaseodeSantiagoIligan">Paseo de Santiago Facebook</a></p>
+      </div>
+  
+      <!-- Iligan City’s Ethnic Center and Museum -->
+      <div class="mb-5">
+        <h2>Iligan City’s Ethnic Center and Museum</h2>
+        <div class="attraction-images">
+          <img src="museum1.JPG" alt="Ethnic Center and Museum Image 1">
+          <img src="museum2.jpg" alt="Ethnic Center and Museum Image 2">
+          <img src="museum3.jpg" alt="Ethnic Center and Museum Image 3">
+          <img src="museum4.jpg" alt="Ethnic Center and Museum Image 4">
+          <img src="museum5.jpg" alt="Ethnic Center and Museum Image 5">
+          <img src="museum6.jpg" alt="Ethnic Center and Museum Image 6">
+        </div>
+        <p><strong><em>The Ethnic Center and Museum offer a fascinating look at the diverse cultural heritage of Iligan's indigenous groups, with exhibits showcasing historical artifacts.</em></strong></p>
+        <p>This museum offers a glimpse into the city's diverse cultural heritage, showcasing artifacts and exhibits from the Maranao, Higaunon, and Christian communities. Housed in a replica of a Maranao Royal House, the museum provides an educational and enriching experience for visitors. The exhibits include traditional clothing, musical instruments, weaponry, and other cultural items that tell the story of Iligan's rich history and the different groups that have shaped its identity.</p>
+        <p><strong>Contact Information:</strong>  
+          <br>Phone: +63 922 345 6789  
+          <br>Facebook: <a href="https://www.facebook.com/IliganEthnicCenter">Iligan City Ethnic Center</a></p>
+      </div>
+  
+      <!-- Sapang Blue Falls -->
+      <div class="mb-5">
+        <h2>Sapang Blue Falls</h2>
+        <div class="attraction-images">
+          <img src="sapang1.jpg" alt="Sapang Blue Falls Image 1">
+          <img src="sapang2.jfif" alt="Sapang Blue Falls Image 2">
+          <img src="sapang3.jpg" alt="Sapang Blue Falls Image 3">
+          <img src="sapang4.avif" alt="Sapang Blue Falls Image 4">
+          <img src="sapang5.jpg" alt="Sapang Blue Falls Image 5">
+          <img src="sapang6.jpg" alt="Sapang Blue Falls Image 6">
+        </div>
+        <p><strong><em>Sapang Blue Falls is a serene and lesser-known waterfall surrounded by lush greenery, offering a tranquil environment and crystal-clear waters.</em></strong></p>
+        <p>A hidden gem located on the outskirts of Iligan City, Sapang Blue Falls is known for its tranquil setting and crystal-clear waters. The falls flow into a 12-foot deep river, surrounded by lush greenery, making it a perfect spot for a refreshing dip and a peaceful retreat.</p>
+        <p><strong>Contact Information:</strong>  
+          <br>Phone: +63 927 785 1234  
+          <br>Facebook: <a href="https://www.facebook.com/SapangBlueFalls">Sapang Blue Falls</a></p>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p>&copy; 2024-2025 ITP4- MIDTERM EXAM | All Rights Reserved</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/iligancitygovernment" class="text-white mx-2" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook-f"> Facebook</i>
+      </a>
+      <a href="https://www.instagram.com/iligan.city.tourism/" class="text-white mx-2" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"> Instagram</i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

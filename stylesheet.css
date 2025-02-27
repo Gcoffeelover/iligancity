@@ -1,0 +1,222 @@
+/* General Styles */
+h3 {
+  font-family: 'Comic Neue', cursive;
+}
+
+.hero h1 {
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  position: relative;
+  
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(37, 32, 32, 0.781); /* White overlay with 50% transparency */
+  z-index: -1; /* Ensures the overlay is behind the content */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+#attractions h2 {
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Hero Section */
+.hero img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero button {
+  transition: all 0.3s ease;
+}
+
+.container {
+  margin-top: 30px;
+  
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.242);
+  padding: 15px;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-body {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-md-4 {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+/* Ensure the images fill the card but don't stretch */
+.card-img-top {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 900px) {
+  .hero img {
+    max-width: 180px; /* Reduce the size of the logo for small screens */
+    border: 5px solid #fff;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.2rem; /* Slightly smaller title for medium screens */
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Smaller text on medium screens */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .row {
+    gap: 15px; /* Reduce gap between cards for smaller screens */
+  }
+
+  .col-md-4 {
+    flex: 1 1 100%; /* Stack cards in a single column on small screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .hero img {
+    max-width: 150px; /* Further reduce logo size for mobile */
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Smaller heading on very small screens */
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .card-body {
+    padding: 5px; /* Reduced padding in cards */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Even smaller card title on mobile */
+  }
+
+  .card-text {
+    font-size: 0.8rem; /* Smaller text on mobile */
+  }
+
+  .social-icons a {
+    font-size: 1.3rem; /* Adjust social media icon size */
+  }
+
+  .row {
+    gap: 10px; /* Less space between cards */
+  }
+}
+
+/* For screens between 601px and 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .hero h1 {
+    font-size: 2.5rem; /* Slightly smaller font size for medium screens */
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .card-text {
+    font-size: 1rem; /* Adjust text size for better readability */
+  }
+
+  .card-body {
+    padding: 15px; /* Ensure enough padding in the cards */
+  }
+
+  .row {
+    gap: 15px; /* Decrease gap between cards */
+  }
+
+  .col-md-4 {
+    flex: 1 1 calc(50% - 15px); /* Two cards per row for medium screens */
+  }
+}
+
+/* For Large Screens - > 900px */
+@media (min-width: 901px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .col-md-4 {
+    flex: 1 1 calc(33.333% - 20px); /* Three cards per row on large screens */
+  }
+}

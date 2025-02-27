@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food and Culture - Iligan City Tourism</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome (for social media icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Add background image to the entire body */
+    body {
+      padding-top: 70px; /* Ensure content doesn't overlap with fixed navbar */
+      background-image: url('spring.jpg');
+      background-size: cover; /* Make the background cover the whole screen */
+      background-position: center; /* Center the background */
+      background-attachment: fixed; /* Keep the background fixed while scrolling */
+    }
+
+    /* Additional custom styling for the navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1030; /* Ensure it stays on top */
+      background-color: rgba(69, 69, 69, 0.771); /* Semi-transparent background */
+      padding: 3px 0; /* Reduced padding to bring navbar closer */
+    }
+
+    .navbar img {
+      height: 50px; /* Adjust logo size */
+      width: 50px;  /* Make the image square for circle effect */
+      border-radius: 50%; /* Make the image a circle */
+    }
+
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.5); /* White toggle button border */
+    }
+
+    .navbar-nav {
+      margin-left: 10px; /* Adjust the spacing of the navbar items */
+    }
+
+    /* Header Section Styling */
+    header {
+      padding: 50px 0; /* Increased padding for better spacing */
+    }
+
+    /* Text Styling */
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: white;
+    }
+
+    p {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    /* Food and Culture Section */
+    #food-culture {
+      text-align: center;
+      color: white; /* Ensure text is visible on the background */
+    }
+
+    .food-images img {
+      object-fit: cover; /* Ensure images are cropped to the same size */
+      width: 100%;
+      height: 400px; /* Adjust height */
+      border-radius: 15px;
+    }
+
+    /* Container Styling */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navbar -->
+  <header class="text-white text-center py-3">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Logo"> <!-- Add your logo image here -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="attractions.html">Attractions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="foodcltre.html">Food & Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Food and Culture Section -->
+  <section id="food-culture" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Food and Culture in Iligan City</h2>
+
+  <!-- Cheding's Peanut -->
+    <div class="mb-5">
+    <h3>Cheding's Peanut</h3>
+    <div class="food-images">
+      <img src="cheding.jpg" alt="cheding">
+    </div>
+    <p><strong><em>Cheding's Peanut is a famous Iligan delicacy known for its crunchy, sweet, and savory flavor. It is made from roasted peanuts coated with caramelized sugar and a hint of salt, making it a perfect snack for locals and visitors alike. It's a must-try treat when visiting Iligan City!</em></strong></p>
+    
+  </div>
+
+      <!-- Suman sa Lihiya -->
+      <div class="mb-5">
+        <h3>Suman sa Lihiya</h3>
+        <div class="food-images">
+          <img src="suman.jpg" alt="Suman sa Lihiya">
+        </div>
+        <p><strong><em>Suman sa Lihiya is a traditional Filipino delicacy made from glutinous rice and cooked with lye water, wrapped in banana leaves. It's often served with sugar or coconut milk, and is a popular snack or dessert in Iligan City.</em></strong></p>
+       
+      </div>
+
+      <!-- La Paz Batchoy -->
+      <div class="mb-5">
+        <h3>La Paz Batchoy</h3>
+        <div class="food-images">
+          <img src="batchoy.jpg" alt="La Paz Batchoy">
+        </div>
+        <p><strong><em>La Paz Batchoy is a savory noodle soup that originated from Iloilo, but has become a beloved dish in Iligan City. It features a flavorful broth with pork, beef, and a variety of garnishes such as chicharrón, garlic, and green onions.</em></strong></p>
+       
+      </div>
+   
+  
+
+ <!-- CULTURE AND EVENTS SECTION -->
+<div class="mb-5">
+    <h2>Cultural Events in Iligan City</h2>
+  
+    <!-- Iligan City Fiesta -->
+    <div class="mb-5">
+      <h3>Iligan City Diyandi Fiesta</h3>
+      <div class="food-images">
+        <img src="fiesta.png" alt="fiesta">
+      </div>
+      <p><strong><em>The Iligan City Fiesta is an annual cultural and religious celebration that showcases the city’s rich traditions and heritage. The event is highlighted by a grand parade, street dancing, and local exhibitions of arts, crafts, and culinary delights.</em></strong></p>
+    </div>
+  
+    <!-- Pasundayag Festival -->
+    <div class="mb-5">
+      <h3>Pasundayag Festival</h3>
+      <div class="food-images">
+        <img src="pasundayag.jpg" alt="pasundayag">
+      </div>
+      <p><strong><em>The Pasundayag Festival is a vibrant cultural festival celebrating Iligan's history, indigenous communities, and creative arts. It’s a time for the locals to showcase their traditional dances, music, and colorful costumes.</em></strong></p>
+      
+    </div>
+  
+    <!-- Ma. Cristina Anyo Festival -->
+    <div class="mb-5">
+      <h3>Ma. Cristina Anyo Festival</h3>
+      <div class="food-images">
+        <img src="marianyo.jpg" alt="macristina">
+      </div>
+      <p><strong><em>The Ma. Cristina Anyo Festival celebrates the vibrant culture and heritage of Iligan's Ma. Cristina Falls and the surrounding area. This festival features cultural performances, environmental awareness programs, and sports competitions.</em></strong></p>
+     
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2024-2025 ITP4- MIDTERM EXAM | All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/iligancitygovernment" class="text-white mx-2" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-facebook-f"> Facebook</i>
+        </a>
+        <a href="https://www.instagram.com/iligan.city.tourism/" class="text-white mx-2" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-instagram"> Instagram</i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

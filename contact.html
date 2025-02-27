@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Iligan City Tourism</title>
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="stylesheet.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome (for social media icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Add background image to the entire body */
+    body {
+      padding-top: 70px; /* Ensure content doesn't overlap with fixed navbar */
+      background-image: url('shesh.jpg');
+      background-size: cover; /* Make the background cover the whole screen */
+      background-position: center; /* Center the background */
+      background-attachment: fixed; /* Keep the background fixed while scrolling */
+      
+    }
+
+    /* Additional custom styling for the navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1030; /* Ensure it stays on top */
+      background-color: rgba(69, 69, 69, 0.8); /* Semi-transparent background */
+      padding: 3px 0; /* Reduced padding to bring navbar closer */
+    }
+
+    .navbar img {
+      height: 50px; /* Adjust logo size */
+      width: 50px;  /* Make the image square for circle effect */
+      border-radius: 50%; /* Make the image a circle */
+    }
+
+    .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.5); /* White toggle button border */
+    }
+
+    .navbar-nav {
+      margin-left: 10px; /* Adjust the spacing of the navbar items */
+    }
+
+    /* Contact Section Styling */
+    #contact {
+      text-align: center;
+      color: white;
+      padding: 80px 0;
+    }
+
+    #contact h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #ffffffd8; /* Light blue color for header */
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+    }
+
+    #contact p {
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    /* Contact Information Styling */
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .contact-info div {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .contact-info div:hover {
+      transform: translateY(-10px);
+    }
+
+    .contact-info i {
+      font-size: 2.5rem;
+      margin-right: 15px;
+      color: #f3ffb2;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .contact-info h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    .contact-info p {
+      color: white;
+      font-size: 1.1rem;
+    }
+
+    .contact-info a {
+      color: #d5ef9a;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Social Media Icons */
+    .social-icons a {
+      font-size: 2.5rem;
+      margin: 15px;
+      color: #f4ffc3;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .social-icons a:hover {
+      color: white; /* Hover color changes to white */
+      transform: scale(1.2); /* Slight scale-up effect */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navbar -->
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Logo"> <!-- Add your logo image here -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="attractions.html">Attractions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="foodcltre.html">Food & Culture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact" class="text-center">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or need assistance, feel free to reach out to us through the following channels:</p>
+
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <!-- Phone Contact -->
+        <div>
+          <i class="fas fa-phone-alt"></i>
+          <h4>Phone</h4>
+          <p><a href="tel:+639273838729">+63 927 383 8729</a></p>
+        </div>
+
+        <!-- Email Contact -->
+        <div>
+          <i class="fas fa-envelope"></i>
+          <h4>Email</h4>
+          <p><a href="mailto:info@iligancity.com">info@iligancity.com</a></p>
+        </div>
+
+        <!-- Address -->
+        <div>
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>Address</h4>
+          <p>Iligan City Hall, Poblacion, Iligan City, Philippines</p>
+        </div>
+
+        <!-- Website -->
+        <div>
+          <i class="fas fa-globe"></i>
+          <h4>Website</h4>
+          <p><a href="https://www.iligancity.gov.ph" target="_blank">www.iligancity.gov.ph</a></p>
+        </div>
+      </div>
+<br>
+      <!-- Social Media Links -->
+      <h2>Follow Us</h2>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/iligancitygovernment" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/iligan.city.tourism/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/IliganCityPH" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/c/IliganCityOfficial" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2024-2025 ITP4- MIDTERM EXAM | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and Font Awesome Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
